@@ -87,3 +87,6 @@ Route::get("/coronavirus", [MyProfileController::class, "coronavirus"]);
 Route::get("/newgallery", [MyProfileController::class, "gallery"]);
 Route::get("/newgallery/ant", [MyProfileController::class, "ant"]);
 Route::get("/newgallery/bird", [MyProfileController::class, "bird"]);
+
+use App\Http\Controllers\Covid19Controller;
+Route::get('/covid19', [ Covid19Controller::class,"index" ]);
